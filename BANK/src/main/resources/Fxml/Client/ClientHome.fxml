@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.bank.Controllers.Client.ClientHomeController">
+
+    <Label fx:id="FirstNameLabel" layoutX="30.0" layoutY="97.0" text="A" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="80.0">
+        <font>
+            <Font name="System Bold" size="26.0" />
+        </font>
+    </Label>
+    <Label layoutX="432.0" layoutY="19.0" style="-fx-alignment: center;" text="Account Summary" textAlignment="CENTER" AnchorPane.rightAnchor="102.0" AnchorPane.topAnchor="20.0">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Label>
+    <Label fx:id="DateLabel" layoutX="30.0" layoutY="45.0" text="Today, 2023/01/02" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="20.0">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+    </Label>
+    <AnchorPane layoutX="357.0" layoutY="389.0" prefHeight="160.0" prefWidth="300.0" style="-fx-background-color: #132A13; -fx-background-radius: 20; -fx-effect: dropshadow(two-pass-box, #AAAAAA, 5, 0, 0, 4);" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="30.0">
+        <Label fx:id="ShortTermLabel" layoutX="42.0" layoutY="27.0" text="\$ 2000.00" textFill="WHITE" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="20.0">
+            <font>
+                <Font name="System Bold" size="32.0" />
+            </font>
+        </Label>
+        <Label layoutX="27.0" layoutY="110.0" style="-fx-alignment: center;" text="Short Term Investment Deposit Account" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="15.0">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <VBox layoutX="223.0" prefHeight="70.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" AnchorPane.bottomAnchor="92.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="0.0">
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../../Image/logo.png" />
+            </ImageView>
+        </VBox>
+    </AnchorPane>
+    <AnchorPane layoutX="357.0" layoutY="55.0" prefHeight="160.0" prefWidth="300.0" style="-fx-background-color: #DDDDDD; -fx-effect: dropshadow(two-pass-box, #AAAAAA, 5, 0, 0, 4); -fx-background-radius: 20;" AnchorPane.bottomAnchor="385.0" AnchorPane.rightAnchor="30.0">
+        <Label layoutX="36.0" layoutY="37.0" text="Income :" AnchorPane.topAnchor="30.0">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="29.0" layoutY="97.0" text="Expenses :" textAlignment="CENTER" AnchorPane.leftAnchor="37.0" AnchorPane.topAnchor="100.0">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Line endX="111.0" layoutX="174.0" layoutY="80.0" startX="-24.5" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="80.0" />
+        <Label fx:id="IncomeLabel" layoutX="151.0" layoutY="22.0" style="-fx-alignment: center;" text="+ $ 5000.00" textAlignment="CENTER" textFill="#248d14" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="30.0">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="ExpensesLabel" layoutX="161.0" layoutY="105.0" style="-fx-alignment: center;" text="- $ 1500.00" textAlignment="CENTER" textFill="RED" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="100.0">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+    </AnchorPane>
+    <AnchorPane layoutX="30.0" layoutY="413.0" prefHeight="160.0" prefWidth="300.0" style="-fx-background-color: #132A13; -fx-background-radius: 20; -fx-effect: dropshadow(two-pass-box, #AAAAAA, 5, 0, 0, 4);" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="30.0">
+        <Label fx:id="LongTermLabel" layoutX="42.0" layoutY="27.0" text="\$ 1000.00" textFill="WHITE" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="20.0">
+            <font>
+                <Font name="System Bold" size="32.0" />
+            </font>
+        </Label>
+        <Label layoutX="27.0" layoutY="110.0" style="-fx-alignment: center;" text="Long Term Investment Deposit Account" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="15.0">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <VBox layoutX="223.0" prefHeight="70.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" AnchorPane.bottomAnchor="92.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="0.0">
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../../Image/logo.png" />
+            </ImageView>
+        </VBox>
+    </AnchorPane>
+    <AnchorPane layoutX="30.0" layoutY="244.0" prefHeight="160.0" prefWidth="300.0" style="-fx-background-color: #132A13; -fx-background-radius: 20; -fx-effect: dropshadow(two-pass-box, #AAAAAA, 5, 0, 0, 4);" AnchorPane.leftAnchor="30.0">
+        <Label fx:id="CurrentLoanLabel" layoutX="42.0" layoutY="27.0" text="\$ 500.00" textFill="WHITE" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="20.0">
+            <font>
+                <Font name="System Bold" size="32.0" />
+            </font>
+        </Label>
+        <Label layoutX="27.0" layoutY="110.0" style="-fx-alignment: center;" text="Current Loan Deposit Account" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="15.0">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <VBox layoutX="223.0" prefHeight="70.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" AnchorPane.bottomAnchor="92.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="0.0">
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../../Image/logo.png" />
+            </ImageView>
+        </VBox>
+    </AnchorPane>
+    <AnchorPane layoutX="350.0" layoutY="244.0" prefHeight="160.0" prefWidth="300.0" style="-fx-background-color: #132A13; -fx-background-radius: 20; -fx-effect: dropshadow(two-pass-box, #888888, 5, 0, 0, 4);">
+        <Label fx:id="SavingsLoanLabel" layoutX="42.0" layoutY="27.0" text="\$ 0.00" textFill="WHITE" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="20.0">
+            <font>
+                <Font name="System Bold" size="32.0" />
+            </font>
+        </Label>
+        <Label layoutX="27.0" layoutY="110.0" style="-fx-alignment: center;" text="Savings Loan Deposit Account" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="15.0">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <VBox layoutX="223.0" prefHeight="70.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF; -fx-alignment: center;" AnchorPane.bottomAnchor="92.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="0.0">
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../../Image/logo.png" />
+            </ImageView>
+        </VBox>
+    </AnchorPane>
+    <cursor>
+        <Cursor fx:constant="DEFAULT" />
+    </cursor>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.bank.Controllers.Admin.AdminProfileController">
+
+    <Label layoutX="232.0" layoutY="29.0" text="Profile" textFill="#132a13" AnchorPane.topAnchor="30.0">
+        <font>
+            <Font name="System Bold" size="64.0" />
+        </font>
+    </Label>
+   <Label layoutX="252.0" layoutY="184.0" text="Account Number : " textFill="#132a13" AnchorPane.topAnchor="200.0">
+      <font>
+         <Font name="System Bold" size="20.0" />
+      </font>
+   </Label>
+   <Label layoutX="286.0" layoutY="325.0" text="Password : " textFill="#132a13" AnchorPane.topAnchor="325.0">
+      <font>
+         <Font name="System Bold" size="20.0" />
+      </font>
+   </Label>
+   <Label fx:id="AccountNumberLabel" layoutX="276.0" layoutY="273.0" textFill="#001aff">
+      <font>
+         <Font name="System Bold Italic" size="18.0" />
+      </font>
+   </Label>
+   <Label fx:id="PasswordLabel" layoutX="301.0" layoutY="395.0" textFill="#0009ff">
+      <font>
+         <Font name="System Bold Italic" size="18.0" />
+      </font>
+   </Label>
+
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.bank.Controllers.Admin.AdminLotteryController">
+
+    <Label layoutX="232.0" layoutY="33.0" text="Lottery" textFill="#132a13" AnchorPane.topAnchor="30.0">
+        <font>
+            <Font name="System Bold" size="64.0" />
+        </font>
+    </Label>
+   <Button fx:id="StartLotteryButton" layoutX="297.0" layoutY="275.0" mnemonicParsing="false" onAction="#PressStartLotteryButton" style="-fx-background-color: #132a13; -fx-background-radius: 15; -fx-effect: dropshadow(two-pass-box, #AAAAAA, 5, 0, 0, 4);" text="Start" textFill="WHITE" AnchorPane.topAnchor="300.0">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <Label fx:id="WinnerAccountNumber" layoutX="332.0" layoutY="197.0" textFill="BLUE" AnchorPane.leftAnchor="332.0" AnchorPane.topAnchor="200.0">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+   </Label>
+
+</AnchorPane>

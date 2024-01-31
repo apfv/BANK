@@ -1,0 +1,1 @@
+java --module-path C:\JavaFX\lib --add-modules javafx.controls,javafx.fxml,javafx.graphics,javafx.web -jar BANK.jar
